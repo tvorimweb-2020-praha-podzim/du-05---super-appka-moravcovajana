@@ -1,0 +1,83 @@
+*, :after, :before { box-sizing: border-box; }
+
+body{
+    font-family: 'Source Sans Pro', sans-serif; 
+    background-color: #e5e5e5;
+}
+.super-apka{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.hlavni-menu{
+    color: #48418e;
+}
+
+ol{
+    margin: 0;
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+li{
+    list-style-type: none;
+    flex-basis: 50%;
+    flex-grow: 1;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #25133d 25%, #aa5477 100%);
+    color: white;
+    padding: 1.5rem;
+}
+
+.banner ol{
+    flex-direction: column;
+}
+
+.banner li{
+    border: oldlace 1px solid;
+    padding: 1rem;
+    margin: 5px 0px;
+    border-radius: 10px;
+}
+
+.banner li:hover{
+    background: linear-gradient(to left, #090979 20%, #00d4ff 100%);
+}
+
+h1 h2{
+    font-weight: 700;
+}
+
+h2{
+    color: #48418e;
+}
+
+.obsah{
+    display: flex;
+    flex-direction: column;    
+}
+
+.sekce{
+    display: flex;
+    flex-direction: column;  
+    align-items: center; 
+    margin: 1rem;
+}   
+
+    .obsah img{
+        max-width: 50px;
+        min-width: 50px;
+}
+
+.sekce p{
+    text-align: center;
+}
+
