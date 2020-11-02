@@ -1,4 +1,12 @@
-*, :after, :before { box-sizing: border-box; }
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
 
 body{
     font-family: 'Source Sans Pro', sans-serif; 
@@ -46,13 +54,15 @@ li{
     padding: 1rem;
     margin: 5px 0px;
     border-radius: 10px;
+    max-width: 20rem;
 }
 
 .banner li:hover{
     background: linear-gradient(to left, #090979 20%, #00d4ff 100%);
 }
 
-h1 h2{
+h1,
+h2{
     font-weight: 700;
 }
 
@@ -79,5 +89,29 @@ h2{
 
 .sekce p{
     text-align: center;
+}
+
+@media (min-width: 480px) {
+   .hlavni-menu ol{
+       justify-content: left;
+   } 
+    
+    .hlavni-menu li{
+    flex-basis: auto;
+    flex-grow: unset;
+    padding: 1rem 1.5rem;
+}
+
+    H1{
+    font-size: 3rem;
+}
+.banner p{
+    font-size: 2rem;
+}
+    .obsah{
+    flex-direction: row;
+}
+
+
 }
 
