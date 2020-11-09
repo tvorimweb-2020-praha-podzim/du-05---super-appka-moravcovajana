@@ -36,11 +36,26 @@ li{
     display: inline-block;
 }
 
+li.hlavni-odkaz{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.cely-banner{
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to right, #25133d 25%, #aa5477 100%);
+    justify-content: space-between;
+}
+
+.telefon{
+    display: none;
+}
+
 
 .banner{
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to right, #25133d 25%, #aa5477 100%);
+    
     color: white;
     padding: 1.5rem;
 }
@@ -63,7 +78,8 @@ li{
 
 h1,
 h2{
-    font-weight: 700;
+    font-weight: 400;
+
 }
 
 h2{
@@ -91,6 +107,13 @@ h2{
     text-align: center;
 }
 
+footer{
+    background-color: #48418e;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
 @media (min-width: 480px) {
    .hlavni-menu ol{
        justify-content: left;
@@ -111,7 +134,16 @@ h2{
     .obsah{
     flex-direction: row;
 }
-
+.telefon{
+    display: none;
+}
 
 }
 
+
+@media (min-width: 900px){
+   .telefon{
+       max-block-size: auto;
+       display: block;
+   } 
+}
