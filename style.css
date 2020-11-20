@@ -10,7 +10,7 @@ html {
 
 body{
     font-family: 'Source Sans Pro', sans-serif; 
-    background-color: #e5e5e5;
+    background-color:white;
 }
 .super-apka{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -78,12 +78,12 @@ li.hlavni-odkaz{
 
 h1,
 h2{
-    font-weight: 400;
-
+    font-weight: 400;   
 }
 
 h2{
     color: #48418e;
+    font-weight: bold;
 }
 
 .obsah{
@@ -111,25 +111,41 @@ footer{
     background-color: #48418e;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
 }
 
 @media (min-width: 480px) {
+.nadpis-banner{
+    margin: 0;
+}
+
    .hlavni-menu ol{
        justify-content: left;
    } 
-    
+   .banner ol{
+    flex-flow: row nowrap;
+    justify-content: left;
+} 
+
+.banner li{
+    margin: 0.5rem 1.5rem 0.5rem 0rem;
+    flex-basis: 10rem;
+    flex-grow: 0;
+}
+
     .hlavni-menu li{
     flex-basis: auto;
     flex-grow: unset;
     padding: 1rem 1.5rem;
+
 }
 
-    H1{
-    font-size: 3rem;
+    h1{
+    font-size: 3.5rem;
 }
 .banner p{
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: lighter;
 }
     .obsah{
     flex-direction: row;
@@ -142,8 +158,21 @@ footer{
 
 
 @media (min-width: 900px){
+
+
    .telefon{
-       max-block-size: auto;
-       display: block;
+    display: block;
+    max-block-size: 20rem;
    } 
+
+   .banner{
+    flex-basis: 50%;
+    justify-content: space-between;
+}
+
+.banner p{
+    margin: 1rem;
+    
+}
+
 }
